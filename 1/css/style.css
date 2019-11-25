@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+header{
+    background-image: url(../../1/img/background.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.brand{
+    float: left;
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.brand.bMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: 1s;
+}
+.brand h2{
+    font-family: 'Viga' , sans-serif;
+    color: whitesmoke;
+    text-shadow: 3px 2px 1px crimson;
+    padding: 10px 20px;
+}
+
+.brand h2 span{
+    color: magenta;
+}
+
+ul{
+    float: right;
+    list-style-type: none;   
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Iceberg', sans-serif;
+    text-shadow: 1px 1px 1px white;
+    font-size: 18px;
+    color: azure;
+    padding: 5px 20px;
+    border: 1px transparent #fff;
+    border-radius: 10px;
+    margin-right: 2px;
+    transition: 0.7s ease-in-out;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: skyblue;
+}
+
+.link{
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.link.uMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: 1s;
+}
+.main{
+    max-width: 1500px;
+}
+
+.about h1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: skyblue;
+    text-shadow: 2px 2px 2px crimson;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title, .p{
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.p {
+    transform: translate(0, 50px);
+    transition: 1s;
+}
+
+.title.tMuncul, .p.pMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.about h1 span{
+    color: magenta;
+}
+
+.about p {
+    position: absolute;
+    top: 40%;
+    color: skyblue;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Ranga', sans-serif;
+    font-size: 18px;
+}
